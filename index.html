@@ -8,8 +8,44 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build.json");
     </script>
+    <style>
+    /* Style the body */
+    body {
+      font-family: Georgia;
+      font-variant: small-caps;
+      margin: 0;
+    }
+
+    /* Header/Logo Title */
+    .header {
+      padding: 60px;
+      text-align: center;
+      background: #00004d;
+      color: white;
+      font-size: 30px;
+    }
+
+    /* Page Content */
+    .content {padding:20px;}
+
+    /* Game Container */
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    </style>
   </head>
   <body>
-    <div id="gameContainer" style="width: 700px; height: 800px; margin: auto"></div>
+    <div class="header">
+    <h1>Can Ci Pin - Space Invaders</h1>
+    </div>
+    <div class="content">
+      <p style="text-align:center">This project was made for fun. Please <a href="http://www.jjwxc.net/onebook.php?novelid=3121357">support the author</a> if you can!</p>
+      <p style="text-align:center">You can <a href="https://twitter.com/AerynXin">contact me</a> if you find any bugs.</p>
+    </div>
+    <div class="container">
+      <div id="gameContainer" style="width: 700px; height: 800px; margin: auto"></div>
+      </div>
   </body>
 </html>
